@@ -35,6 +35,7 @@ if [ ! -f "$APP_DIR/.env" ]; then
 fi
 
 echo "[5/5] firewall..."
+ufw allow 22/tcp
 ufw allow 3000/tcp
 ufw --force enable
 ufw reload
