@@ -19,4 +19,7 @@ pm2 restart pusula 2>/dev/null || pm2 start "$APP_DIR/start.sh" --name pusula
 echo "[5/5] pm2 save..."
 pm2 save
 
+echo "Waiting for app to start..."
+sleep 5
+
 echo "Deploy complete."

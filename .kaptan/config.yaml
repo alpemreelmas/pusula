@@ -1,4 +1,4 @@
 service: pusula
 server: flalingo-prod
 path: /opt/pusula
-health_url: http://127.0.0.1:3000/
+health_url: http://127.0.0.1:3000/probot
