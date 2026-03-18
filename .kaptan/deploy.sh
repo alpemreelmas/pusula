@@ -7,7 +7,7 @@ echo "[1/5] git pull..."
 git -C "$APP_DIR" pull origin main
 
 echo "[2/5] npm install..."
-npm ci --prefix "$APP_DIR"
+npm ci --include=dev --prefix "$APP_DIR"
 
 echo "[3/5] build..."
 npm run build --prefix "$APP_DIR"
